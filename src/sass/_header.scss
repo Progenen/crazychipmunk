@@ -1,0 +1,116 @@
+.header {
+    &__burger {
+        display: none;
+
+        height: 23px;
+        flex-direction: column;
+        row-gap: 10px;
+        padding-right: 35px;
+
+        span {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background-color: #232323;
+        }
+
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        color: #000638;
+        text-decoration: none;
+    }
+
+    &__col {
+        margin-top: 60px;
+    }
+
+    &__col_left {
+        width: 50%;
+
+    }
+
+    &__col_right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 18px;
+        color: #605c59;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    &__nav ul {
+        font-family: "Roboto", sans-serif;
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__menu {
+        display: none;
+        padding: 50px 10px;
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: 0.3s ease-in-out;
+
+        &_active {
+            left: 0;
+        }
+
+        &-close {
+            width: 20px;
+            height: 20px;
+
+            span {
+                display: block;
+                width: 20px;
+                height: 1px;
+                background-color: #232323;
+
+                &:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: translateY(8px) rotate(-45deg);
+                }
+            }
+        }
+
+        &-nav {
+            margin-top: 50px;
+            padding-left: 14px;
+
+            ul {
+                font-family: "Roboto", sans-serif;
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px;
+                padding: 0;
+                list-style-type: none;
+            }
+
+        }
+
+        &-link {
+            font-weight: 400;
+            font-size: 18px;
+            color: #605c59;
+            text-decoration: none;
+        }
+    }
+
+}
