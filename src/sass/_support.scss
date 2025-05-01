@@ -61,10 +61,12 @@ $color1: #ff0000;
 @include font-face('Roboto', '../fonts/Roboto/Roboto-Medium', 500, normal, ttf);
 @include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400, normal, ttf);
 @include font-face('Merriweather', '../fonts/Merriweather/Merriweather-Regular', 400, normal, ttf);
-// @include font-face('Merriweather', '../fonts/Merriweather/Merriweather-Bold', 700, normal, ttf);
+@include font-face('Merriweather', '../fonts/Merriweather/Merriweather-Bold', 700, normal, ttf);
+@include font-face('Merriweather', '../fonts/Merriweather/Merriweather-Black', 900, normal, ttf);
 @include font-face('Merriweather', '../fonts/Merriweather/Merriweather-Italic', 400, italic, ttf);
 
 // Vars
 
 // Путь к спрайту для конкатенации
+
 $sprite: "../svg/dest/stack/spriteMulti.svg#";
