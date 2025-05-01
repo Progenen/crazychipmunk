@@ -1,1 +1,101 @@
+.cta {
+    margin-top: 72px;
 
+    .row {
+        gap: 80px;
+    }
+
+    &__col_left {
+        width: 35.71%;
+        background: #283a61;
+        border-radius: 5px;
+        max-width: 382px;
+        max-height: 372px;
+    }
+
+    &__col_right {
+        width: 30%;
+    }
+
+    &__newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    &__title {
+        width: 53.3%;
+        margin-top: 38px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 160%;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__subtitle {
+        margin-top: 13px;
+        width: 86%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        line-height: 160%;
+        font-size: 18px;
+        text-align: center;
+        color: #dfe6ff;
+    }
+
+    &__subscribe {
+        margin: 35px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        width: 288px;
+
+        input {
+            width: 100%;
+            border: none;
+            border-radius: 3px;
+            padding: 11px 0 12px 15px;
+            font-family: "Merriweather", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #5f5f5f;
+
+            &::placeholder {
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        button {
+            margin-top: 23px;
+            border-radius: 3px;
+            width: 99px;
+            height: 47px;
+            background: #000638;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            text-align: center;
+            color: #fff;
+            align-self: flex-start;
+            margin-bottom: 38px;
+        }
+    }
+
+    &__posts {
+        margin-top: 27px;
+        font-family: "Roboto", sans-serif;
+
+        a {
+            font-family: "Merriweather", sans-serif;
+            display: block;
+            margin-top: 22px;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
