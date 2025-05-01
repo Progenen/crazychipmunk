@@ -1,21 +1,36 @@
-@media (max-width: 1600px) {
-}
+@media (max-width: 1600px) {}
 
-@media (max-width: 1440px) {
-}
+@media (max-width: 1440px) {}
 
-@media (max-width: 1220px) {
+@media (max-width: 1220px) {}
 
-}
+@media (max-width: 992px) {}
 
-@media (max-width: 992px) {
-}
+@media (max-width: 876px) {}
 
-@media (max-width: 876px) {
-}
-
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 576px) {
+
+    //promo 576px
+    .promo {
+        &__title {
+            font-size: 36px;
+
+        }
+
+        &__subtitle {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &__search {
+            max-width: 345px;
+
+            input {
+                padding: 10px 40px 10px 40px;
+                text-align: center;
+            }
+        }
+    }
 }

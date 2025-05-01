@@ -1,8 +1,19 @@
 @@include('./parts/header.html', {
-    "class": "header-new--fixed"
+"class": "header-new--fixed"
 })
 <main>
-
+    <section class="promo">
+        <div class="container">
+            <div class="promo__text">
+                <div class="promo__title">The Food Ninja Blog</div>
+                <div class="promo__subtitle">A blog about food, experiences, and recipes.</div>
+            </div>
+            <div class="promo__search">
+                <input type="search" id="search" name="q" placeholder="Search for articles" />
+                <button class="promo__button"></button>
+            </div>
+        </div>
+    </section>
 </main>
 </div>
 @@include('./parts/footer.html')
