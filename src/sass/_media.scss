@@ -1,21 +1,22 @@
-@media (max-width: 1600px) {
-}
+@media (max-width: 1600px) {}
 
-@media (max-width: 1440px) {
-}
+@media (max-width: 1440px) {}
 
-@media (max-width: 1220px) {
+@media (max-width: 1220px) {}
 
-}
+@media (max-width: 992px) {}
 
-@media (max-width: 992px) {
-}
+@media (max-width: 876px) {}
 
-@media (max-width: 876px) {
-}
-
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 576px) {
+
+    //foter 576px
+    .footer {
+        &__copyright {
+            font-size: 12px;
+
+        }
+    }
 }
