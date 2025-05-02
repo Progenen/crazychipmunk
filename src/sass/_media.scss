@@ -2,7 +2,14 @@
 
 @media (max-width: 1440px) {}
 
-@media (max-width: 1220px) {}
+@media (max-width: 1220px) {
+    .cta {
+        .row {
+            gap: 40px;
+        }
+    }
+
+}
 
 @media (max-width: 992px) {
 
@@ -10,10 +17,20 @@
     .cta {
 
         &__col_left,
-        &__col_right {
+        &__col_menu {
             width: 100%;
             max-width: 100%;
             max-height: 100%;
+        }
+
+        &__col_menu {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &__posts {
+            margin-top: 0;
         }
 
     }
@@ -26,14 +43,16 @@
     //cta 768px
     .cta {
         .row {
-            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 147px;
         }
 
         &__col_left,
-        &__col_right {
+        &__col_menu {
             width: 100%;
             max-width: 100%;
             max-height: 100%;
+            margin-bottom: 0;
         }
 
         &__newsletter {
@@ -47,6 +66,17 @@
         &__subtitle {
             width: 100%;
         }
+
+        &__subscribe {
+            width: 80%;
+
+            button {
+                width: 100%;
+                align-self: center;
+            }
+
+        }
+
     }
 }
 
@@ -58,7 +88,7 @@
         }
 
         &__col_left,
-        &__col_right {
+        &__col_menu {
             width: 100%;
             max-width: 100%;
         }
@@ -70,7 +100,12 @@
         &__subscribe {
             align-items: center;
 
+            input {
+                width: 100%;
+            }
+
             button {
+                width: 100%;
                 align-self: center;
             }
         }

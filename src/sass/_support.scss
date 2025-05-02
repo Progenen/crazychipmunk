@@ -57,6 +57,7 @@ $color1: #ff0000;
 
 
 // Fonts
+@include font-face('Roboto', '../fonts/Roboto/Roboto-Bold', 700, normal, ttf);
 @include font-face('Roboto', '../fonts/Roboto/Roboto-SemiBold', 600, normal, ttf);
 @include font-face('Roboto', '../fonts/Roboto/Roboto-Medium', 500, normal, ttf);
 @include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400, normal, ttf);
