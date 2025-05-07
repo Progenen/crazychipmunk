@@ -15,7 +15,7 @@
   \*************************/
 /***/ (() => {
 
-eval("document.addEventListener('DOMContentLoaded', () => {\r\n\r\n})\r\n\r\nconst burger = document.querySelector(\".header__burger\"),\r\n    close = document.querySelector(\".header__menu-close\"),\r\n    menu = document.querySelector(\".header__menu\");\r\n\r\nburger.addEventListener(\"click\", () => {\r\n    menu.classList.add(\"header__menu_active\");\r\n    document.body.style.overflow = \"hidden\";\r\n});\r\n\r\nclose.addEventListener(\"click\", () => {\r\n    menu.classList.remove(\"header__menu_active\");\r\n    document.body.style.overflow = \"\";\r\n});\n\n//# sourceURL=webpack://project-name/./src/js/index.js?");
+eval("document.addEventListener('DOMContentLoaded', () => {\n\n})\n\nconst burger = document.querySelector(\".header__burger\");\nconst menu = document.querySelector(\".header__nav\");\nconst header = document.querySelector(\".header\");\n\nmenu.style.top = header.clientHeight + \"px\";\nburger.addEventListener(\"click\", () => {\n   if (burger.classList.contains(\"is-active\")) {\n       burger.classList.remove(\"is-active\");\n       menu.classList.remove(\"is-active\");\n       document.body.style.overflow = \"\";\n   } else {\n       burger.classList.add(\"is-active\");\n       menu.classList.add(\"is-active\");\n       document.body.style.overflow = \"hidden\";\n   }\n});\n\n//# sourceURL=webpack://project-name/./src/js/index.js?");
 
 /***/ })
 
