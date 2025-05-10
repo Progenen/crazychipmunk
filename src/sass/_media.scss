@@ -1,8 +1,12 @@
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+}
 
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+}
 
-@media (max-width: 1220px) {}
+@media (max-width: 1220px) {
+
+}
 
 @media (max-width: 992px) {
 //    promo 992
@@ -18,6 +22,30 @@
 @media (max-width: 876px) {}
 
 @media (max-width: 768px) {
+
+    //header 768px
+    .row {
+    }
+
+    .header {
+
+        &__col {
+            margin-top: 30px;
+        }
+
+        &__col_right {
+
+            ul {
+                display: flex;
+                gap: 30px;
+                padding-left: 0;
+
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
 //    promo 768
     .promo {
         &__title {
@@ -66,5 +94,56 @@
                 font-size: 14px;
             }
         }
+    }
+
+    //header 576px
+    .header {
+
+        .row {
+            justify-content:  space-between;
+            align-items: center;
+        }
+
+        &__col {
+
+            &_burger {
+                width: auto;
+            }
+        }
+
+        &__nav {
+            display: block;
+            position: absolute;
+            width:  100%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            background-color: #fff;
+            padding: 20px;
+            transition: .3s;
+            ul {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            &.is-active {
+                right: 0;
+            }
+        }
+
+
+
+        &__burger {
+            margin-left: auto;
+            display: flex;
+        }
+
+        &__col_right {
+            width: 0%;
+        }
+
+        // &__menu {
+        //     display: block;
+        // }
     }
 }
