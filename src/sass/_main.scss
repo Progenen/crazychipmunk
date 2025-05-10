@@ -6,16 +6,18 @@
     }
 
     &__col_left {
-        width: 35.823%;
+        width: 52.038%;
         background: #283a61;
         border-radius: 5px;
         margin-bottom: 147px;
     }
 
     &__col_menu {
-        width: 30.008%;
+        width: auto;
+        display: flex;
+        column-gap: 40px;
+        row-gap: 20px;
     }
-
 
     &__newsletter {
         display: flex;
@@ -92,18 +94,20 @@
         }
     }
 
-    &__popular {
+    &__menu-title {
         font-weight: 500;
         font-size: 14px;
         line-height: 160%;
         font-family: "Roboto", sans-serif;
     }
 
-    &__posts {
+    &__menu-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
         margin-top: 27px;
-        font-family: "Roboto", sans-serif;
 
-        a {
+        li > a {
             font-weight: 400;
             font-size: 14px;
             line-height: 160%;
