@@ -1,6 +1,4 @@
-@@include('./parts/header.html', {
-    "class": "header-new--fixed"
-})
+@@include('./parts/header.html')
 <main>
     <section class="promo">
         <div class="container">
@@ -22,11 +20,11 @@
                         <img src="images/blog1.webp" alt="blog1">
                     </div>
                     <div class="blog__content">
-                        <div class="blog__category">
-                            <span>Travel</span>
-                        </div>
+                        <a href="#" class="blog__category category">
+                            Travel
+                        </a>
                         <div class="blog__title">
-                            <span>What Traveling Greece For 2 Weeks Taught Me About Life</span>
+                            What Traveling Greece For 2 Weeks Taught Me About Life
                         </div>
                         <div class="blog__data">Jun 21, 2021 • 11 min read</div>
                         <div class="blog__text">
@@ -35,12 +33,12 @@
                             nulla malesuada amet purus sed.
                         </div>
                     </div>
-                    <div class="blog__author">
-                        <div class="blog__author-img">
+                    <div class="blog__author author">
+                        <div class="blog__author-img author__img">
                             <img src="images/author.webp" alt="author">
                         </div>
-                        <div class="blog__author-name">
-                            <span>George Costanza</span>
+                        <div class="blog__author-name author__name">
+                            George Costanza
                         </div>
                     </div>
                     <a href="#" class="blog__link"></a>
@@ -65,12 +63,12 @@
                             sed. Urna sit Eget.
                         </div>
                     </div>
-                    <div class="blog__author">
-                        <div class="blog__author-img">
+                    <div class="blog__author author">
+                        <div class="blog__author-img author__img">
                             <img src="images/author.webp" alt="author">
                         </div>
-                        <div class="blog__author-name">
-                            <span>George Costanza</span>
+                        <div class="blog__author-name author__name">
+                            George Costanza
                         </div>
                     </div>
                     <a href="#" class="blog__link"></a>
@@ -133,5 +131,4 @@
             </div>
     </section>
 </main>
-</div>
 @@include('./parts/footer.html')

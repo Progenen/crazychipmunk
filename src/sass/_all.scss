@@ -7,7 +7,11 @@ html {
 }
 
 :root {
-
+    --text-sm: 18px;
+    --text-md: 20px;
+    --text-lg: 24px;
+    --text-xl: 36px;
+    --text-xxl: 46px;
 }
 
 body {
@@ -56,4 +60,56 @@ footer {
 
 .row {
     display: flex;
+}
+
+.category {
+    display: block;
+    margin-top: 21px;
+    display: inline-block;
+    width: fit-content;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 17px 5px 17px;
+    border-radius: 3px;
+    background: #283a61;
+    text-decoration: none;
+}
+
+.info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #515151;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    img {
+        border-radius: 50%;
+        display: block;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+    }
+
+    &__name {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.data {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #515151;
 }

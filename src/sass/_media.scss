@@ -50,6 +50,29 @@
         }
 
     }
+
+//    root 992
+    :root {
+        --text-sm: 16px;
+        --text-md: 18px;
+        --text-lg: 20px;
+        --text-xl: 34px;
+        --text-xxl: 36px;
+    }
+
+//    article 992
+    .article {
+        margin-top: 50px;
+        &__content {
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .single-article > .cta {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 876px) {}
@@ -57,9 +80,6 @@
 @media (max-width: 768px) {
 
     //header 768px
-    .row {
-    }
-
     .header {
 
         &__col {
@@ -149,9 +169,8 @@
             }
         }
     }
+
     //blog 876px
-
-
     .blog {
         margin-top: 40px;
         &__item {
@@ -173,6 +192,82 @@
 
         &__pagination {
             margin-top: 50px;
+        }
+    }
+
+//    root 768
+    :root {
+        --text-sm: 14px;
+        --text-md: 16px;
+        --text-lg: 18px;
+        --text-xl: 22px;
+        --text-xxl: 28px;
+    }
+
+//    article 768
+    .article {
+        &__content {
+            i {
+                font-size: 20px;
+                line-height: normal;
+                margin: 20px 0;
+            }
+
+            h3 + p {
+                margin-top: 10px;
+            }
+
+            p + p {
+                margin-top: 10px;
+            }
+
+            p + h3 {
+                margin-top: 20px;
+            }
+        }
+
+        &__box {
+            padding: 20px;
+        }
+
+        &__anchors {
+            margin: 30px 0;
+        }
+
+        &__keep {
+            margin-top: 25px;
+        }
+
+        &__keep-title {
+            margin-bottom: 20px;
+        }
+        
+        &__keep-item {
+            flex-direction: column;
+            gap: 15px;
+            max-width: 420px;
+        }
+
+        &__keep-item-img {
+            max-width: 100%;
+            max-height: fit-content;
+        }
+
+        &__about-author {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        &__about-author-title {
+            margin-bottom: 8px;
+        }
+
+        &__about-author-img {
+
         }
     }
 }
@@ -318,5 +413,11 @@
         }
     }
 
+    //foter 576px
+    .footer {
+        &__copyright {
+            font-size: 12px;
 
+        }
+    }
 }

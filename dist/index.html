@@ -11,26 +11,27 @@
 
 <body>
     <div class="wrapper">
-        <section class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="header__col header__col_left">
-                        <a href="#" class="header__title">Food Ninja</a>
+        <div class="content">
+            <section class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="header__col header__col_left">
+                            <a href="#" class="header__title">Food Ninja</a>
+                        </div>
+                        <div class="header__col header__col_right">
+                            <nav class="header__nav">
+                                <ul>
+                                    <li><a href="#" class="header__link">Blog</a></li>
+                                    <li><a href="#" class="header__link">About</a></li>
+                                    <li><a href="#" class="header__link">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__col header__col_burger">
+                            <div class="header__burger"><span></span><span></span><span></span></div>
+                        </div>
                     </div>
-                    <div class="header__col header__col_right">
-                        <nav class="header__nav">
-                            <ul>
-                                <li><a href="#" class="header__link">Blog</a></li>
-                                <li><a href="#" class="header__link">About</a></li>
-                                <li><a href="#" class="header__link">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header__col header__col_burger">
-                        <div class="header__burger"><span></span><span></span><span></span></div>
-                    </div>
-                </div>
-        </section>
+            </section>
 <main>
     <section class="promo">
         <div class="container">
@@ -52,11 +53,11 @@
                         <img src="images/blog1.webp" alt="blog1">
                     </div>
                     <div class="blog__content">
-                        <div class="blog__category">
-                            <span>Travel</span>
-                        </div>
+                        <a href="#" class="blog__category category">
+                            Travel
+                        </a>
                         <div class="blog__title">
-                            <span>What Traveling Greece For 2 Weeks Taught Me About Life</span>
+                            What Traveling Greece For 2 Weeks Taught Me About Life
                         </div>
                         <div class="blog__data">Jun 21, 2021 • 11 min read</div>
                         <div class="blog__text">
@@ -65,12 +66,12 @@
                             nulla malesuada amet purus sed.
                         </div>
                     </div>
-                    <div class="blog__author">
-                        <div class="blog__author-img">
+                    <div class="blog__author author">
+                        <div class="blog__author-img author__img">
                             <img src="images/author.webp" alt="author">
                         </div>
-                        <div class="blog__author-name">
-                            <span>George Costanza</span>
+                        <div class="blog__author-name author__name">
+                            George Costanza
                         </div>
                     </div>
                     <a href="#" class="blog__link"></a>
@@ -95,12 +96,12 @@
                             sed. Urna sit Eget.
                         </div>
                     </div>
-                    <div class="blog__author">
-                        <div class="blog__author-img">
+                    <div class="blog__author author">
+                        <div class="blog__author-img author__img">
                             <img src="images/author.webp" alt="author">
                         </div>
-                        <div class="blog__author-name">
-                            <span>George Costanza</span>
+                        <div class="blog__author-name author__name">
+                            George Costanza
                         </div>
                     </div>
                     <a href="#" class="blog__link"></a>
@@ -165,7 +166,16 @@
 </main>
 </div>
 <footer class="footer">
-
+    <div class="container">
+        <div class="footer__links">
+            <a href="#">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer__copyright">
+            <div>Copyright © 2021 Food Ninja Blog. All Rights Reserved.</div>
+        </div>
+    </div>
 </footer>
 </div>
 
